@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+:root {
+    --dark-gold: #B28756;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    height: 100px;
+    background-color: #000;
+    font-size: 15px;
+}
+
+.container {
+    width: 100vw;
+    max-width: 1140px;
+    height: 100%;
+    margin: auto;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--dark-gold);
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+header .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu--logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--dark-gold);
+}
+
+header nav ul {
+    display: flex;
+}
+header nav ul li {
+    list-style: none;
+    margin-right: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
+header nav ul li a {
+    display: inline-block;
+    line-height: 100px;
+}
+
+header nav ul li a:hover {
+    line-height: calc(100px - 10px);
+    border-bottom: 5px solid var(--dark-gold);
+    border-top: 5px solid #000;
+}
+
+/* main */
+main .banner {
+    height: calc(100vh - 100px);
+    background-image: url(../media/images/bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+main .banner .bg {
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+}
+
+main .banner .banner-sliders {
+    height: 100%;
+    text-transform: uppercase;
+    display: flex;
+    overflow: hidden;  
+}
+
+main .banner .slider {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 0;
+}
+main .banner .slider .slidearea {
+    text-align: center;
+    width: 100vw;
+}
+
+main .banner .slider h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+main .banner .slider h1 span {
+    color: var(--dark-gold);
+}
+
+main .banner .slider h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+main .banner .slider-pointers {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -50px;
+}
+
+main .banner .slider-pointers .pointer {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #B28756;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+main .banner .slider-pointers .pointer:last-child {
+    margin: 0;
+}
