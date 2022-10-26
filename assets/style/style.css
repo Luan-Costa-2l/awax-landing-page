@@ -7,16 +7,24 @@
 * {
     margin: 0;
     padding: 0;
-    color: #FFF;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
+}
+
+body {
+    color: #FFF;
+}
+
+body a {
+    color: #FFF;
 }
 
 header {
     height: 100px;
     background-color: #000;
     font-size: 15px;
+    color: #FFF;
 }
 
 .container {
@@ -29,10 +37,11 @@ header {
 .button {
     display: inline-block;
     background-color: var(--dark-gold);
-    padding: 10px 25px;
+    padding: 10px 30px;
     border-radius: 25px;
     font-weight: 600;
     font-size: 13px;
+    text-transform: uppercase;
 }
 
 header .menu {
@@ -124,7 +133,7 @@ main .banner .slider h2 {
 }
 
 main .banner .slider-pointers {
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     position: absolute;
@@ -135,10 +144,74 @@ main .banner .slider-pointers .pointer {
     display: inline-block;
     width: 15px;
     height: 15px;
-    background-color: #B28756;
+    border: 3px solid var(--dark-gold);
     border-radius: 50%;
     margin-right: 7px;
+    cursor: pointer;
 }
 main .banner .slider-pointers .pointer:last-child {
     margin: 0;
 }
+
+main .banner .slider-pointers .pointer:hover {
+    background-color: var(--dark-gold);
+}
+
+
+/* styles of light sections */
+.default {
+    padding: 30px 0;
+}
+.light {
+    background-color: #FFF;
+    color: #000;
+}
+
+.default .section-title {
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.default .section-desc {
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #9a9a9a;
+    margin-bottom: 40px;
+}
+
+.dark {
+    background-color: #000;
+    color: #FFF;
+}
+
+
+.section-about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-about .section-about--content p {
+    margin-right: 30px;
+    line-height: 30px;
+}
+
+.section-about .section-about--content .button {
+    margin-top: 25px;
+}
+
+.section-about .section-about--image {
+    box-shadow: 2px 2px 6px #000;
+    border-radius: 5px;
+}
+.section-about .section-about--image img {
+    width: 480px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+
