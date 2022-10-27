@@ -158,9 +158,9 @@ main .banner .slider-pointers .pointer:hover {
 }
 
 
-/* styles of light sections */
+/* styles of default, light and dark sections */
 .default {
-    padding: 30px 0;
+    padding: 40px 0;
 }
 .light {
     background-color: #FFF;
@@ -169,7 +169,7 @@ main .banner .slider-pointers .pointer:hover {
 
 .default .section-title {
     font-weight: 700;
-    font-size: 27px;
+    font-size: 30px;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 5px;
@@ -190,9 +190,15 @@ main .banner .slider-pointers .pointer:hover {
 }
 
 
+
+
+
+
+
 .section-about {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .section-about .section-about--content p {
@@ -205,8 +211,7 @@ main .banner .slider-pointers .pointer:hover {
 }
 
 .section-about .section-about--image {
-    box-shadow: 2px 2px 6px #000;
-    border-radius: 5px;
+    box-shadow: 2px 2px 12px #000;
 }
 .section-about .section-about--image img {
     width: 480px;
@@ -215,3 +220,40 @@ main .banner .slider-pointers .pointer:hover {
 }
 
 
+
+
+.section-services {
+    display: flex;
+}
+
+.section-services .section-services--item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 30px;
+    border-right: 1px solid #9a9a9a;
+}
+.section-services .section-services--item:first-child {
+    border-left: 1px solid #9a9a9a;
+}
+
+.section-services .section-services--item .image {
+    width: 59px;
+    height: 59px;
+}
+.section-services .section-services--item img {
+    width: 100%;
+    height: 100%;
+}
+
+.section-services .section-services--item h3 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.section-services .section-services--item p {
+    text-align: center;
+    line-height: 25px;
+}
