@@ -92,6 +92,7 @@ main .banner {
     background-position: bottom;
     background-repeat: no-repeat;
     text-align: center;
+    overflow: hidden;
 }
 
 main .banner .bg {
@@ -104,7 +105,9 @@ main .banner .banner-sliders {
     height: 100%;
     text-transform: uppercase;
     display: flex;
-    overflow: hidden;  
+    position: relative;
+    left: 0;
+    transition: left .5s ease;
 }
 
 main .banner .slider {
@@ -112,9 +115,8 @@ main .banner .slider {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    left: 0;
 }
+
 main .banner .slider .slidearea {
     text-align: center;
     width: 100vw;
@@ -146,7 +148,7 @@ main .banner .slider-pointers .pointer {
     display: inline-block;
     width: 15px;
     height: 15px;
-    border: 3px solid var(--dark-gold);
+    border: 2px solid var(--dark-gold);
     border-radius: 50%;
     margin-right: 7px;
     cursor: pointer;
@@ -155,7 +157,7 @@ main .banner .slider-pointers .pointer:last-child {
     margin: 0;
 }
 
-main .banner .slider-pointers .pointer:hover {
+main .banner .slider-pointers .pointer:hover, .banner .active {
     background-color: var(--dark-gold);
 }
 
