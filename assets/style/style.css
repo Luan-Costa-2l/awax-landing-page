@@ -263,6 +263,9 @@ main .banner .slider-pointers .pointer:hover, .banner .active {
 }
 
 
+
+
+
 .section-projects {
     display: flex;
     flex-direction: column;
@@ -298,3 +301,36 @@ main .banner .slider-pointers .pointer:hover, .banner .active {
 .section-projects .section-projects--filters ul li.active  {
     border-bottom: 3px solid var(--dark-gold);
 }
+
+.section-projects .section-projects--images {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.section-projects .section-projects--image {
+    max-width: 280px;
+    height: 166.5px;
+}
+.section-projects .section-projects--imagearea {
+    max-width: 260px;
+    height: inherit;
+}
+
+.section-projects .section-projects--imagearea-desc {
+    max-width: inherit;
+    height: inherit;
+    padding: 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+.section-projects img {
+    width: 100%;
+} 
