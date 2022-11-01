@@ -347,3 +347,117 @@ main .banner .slider-pointers .pointer:hover, .banner .active {
 .section-projects--imagearea:hover .section-projects--imagearea-desc {
     display: flex;
 }
+
+
+
+
+
+.bg {
+    background-image: url('../media/images/foto2.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.bg .bg-team {
+    height: 100%;
+    padding: 40px 0 65px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.section-team {
+    overflow: hidden;
+}
+
+.section-team .section-team--sliders {
+    display: flex;
+    width: 3420px;
+}
+
+.section-team .section-team--sliders .slider {
+    width: inherit;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.section-team .section-team--sliders .slider .sliderarea {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF;
+    color: #000;
+}
+
+.section-team .section-team--sliders .slider .image {
+    width: 183px;
+    height: 183px;
+    margin-bottom: 30px;
+}
+
+.section-team .section-team--sliders .slider .name {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.section-team .section-team--sliders .slider .role {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.section-team .section-team--sliders .slider .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.section-team .section-team--sliders .slider .social {
+    display: flex;
+}
+
+.section-team .section-team--sliders .slider .social--icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #555;
+    margin-right: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.section-team .section-team--sliders .slider .social--icon:last-child {
+    margin-right: 0;
+}
+
+.section-team .section-team--sliders .slider .social--icon:hover {
+    background-color: var(--dark-gold);
+}
+
+.section-team .slider-pointers {
+    width: 100vw;
+    max-width: 1140px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: 25px;
+}
+
+.section-team .slider-pointers .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--dark-gold);
+    border-radius: 50%;
+    margin-right: 7px;
+    cursor: pointer;
+}
+.section-team .slider-pointers .pointer:last-child {
+    margin: 0;
+}
+
+.section-team .slider-pointers .pointer:hover, .section-team .active {
+    background-color: var(--dark-gold);
+}
