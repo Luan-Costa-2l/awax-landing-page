@@ -136,7 +136,7 @@ main .banner .slider h2 {
     margin-bottom: 15px;
 }
 
-main .banner .slider-pointers {
+.slider-pointers {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -144,7 +144,7 @@ main .banner .slider-pointers {
     margin-top: -50px;
 }
 
-main .banner .slider-pointers .pointer {
+.slider-pointers .pointer {
     display: inline-block;
     width: 15px;
     height: 15px;
@@ -153,11 +153,11 @@ main .banner .slider-pointers .pointer {
     margin-right: 7px;
     cursor: pointer;
 }
-main .banner .slider-pointers .pointer:last-child {
+.slider-pointers .pointer:last-child {
     margin: 0;
 }
 
-main .banner .slider-pointers .pointer:hover, .banner .active {
+.slider-pointers .pointer:hover, .slider-pointers .active {
     background-color: var(--dark-gold);
 }
 
@@ -467,14 +467,21 @@ main .banner .slider-pointers .pointer:hover, .banner .active {
 
 
 .gray {
-    background-color: #CCC;
+    background-color: #ededed;
 }
 
 .section-clients {
     text-align: center;
+    overflow: hidden;
+}
+
+.section-clients .sliders {
+    display: flex;
+    width: 3420px;
 }
 
 .section-clients .sliders .slide {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -500,15 +507,48 @@ main .banner .slider-pointers .pointer:hover, .banner .active {
 .section-clients .sliders .slide .slide--role {
     font-size: 15px;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .section-clients .sliders .slide .slide--quoteImage {
-    width: 35px;
+    width: 30px;
     margin-bottom: 25px;
 }
 
 .section-clients .sliders .slide .slide--quoteImage img {
     width: 100%;
     height: 100%;
+}
+
+.section-clients .slide p {
+    max-width: 900px;
+    margin-bottom: 40px;
+}
+
+.section-clients .slider-pointers {
+    max-width: 1140px;
+    margin-top: 0;
+}
+
+
+
+
+
+.company {
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+}
+.section-company {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-company .image {
+    min-width: 110px;
+    display: flex;
+    align-items: center;
+}
+
+.section-company .image img {
+    width: 100%;
 }
