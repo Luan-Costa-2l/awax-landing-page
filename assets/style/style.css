@@ -552,3 +552,58 @@ main .banner .slider h2 {
 .section-company .image img {
     width: 100%;
 }
+
+
+
+
+
+.section-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-price .price {
+    background-color: #FFF;
+    margin-right: 20px;
+    padding: 30px;
+    min-width: 300px;
+}
+
+.section-price .price:last-child {
+    margin-right: none;
+}
+
+.section-price .price,
+.section-price .price ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-price .price .price-pack {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.section-price .price .price-title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.section-price .price .price-month {
+    font-size: 12px;
+    color: #555;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.section-price .price ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.section-price .button {
+    background-color: #000;
+}

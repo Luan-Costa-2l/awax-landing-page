@@ -1,7 +1,7 @@
 const c = (el) => document.querySelector(el);
 const cs = (el) => document.querySelectorAll(el);
 
-cs('.pointer').forEach((item) => {
+cs('.banner .pointer').forEach((item) => {
     item.addEventListener('click', (e) => {
         c('.banner .pointer.active').classList.remove('active');
         item.classList.add('active');
