@@ -607,3 +607,43 @@ main .banner .slider h2 {
 .section-price .button {
     background-color: #000;
 }
+
+.section-price .button.active,
+.section-price .button:hover {
+    background-color: var(--dark-gold);
+}
+
+
+
+
+
+
+
+.section-premium {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-premium .section-premium--left {
+    width: 50%;
+}
+
+.section-premium .section-premium--left img {
+    width: 100%;
+}
+
+.section-premium .section-premium--right {
+    max-width: 600px;
+}
+
+.section-premium .section-premium--right .right-title {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.section-premium .section-premium--right img {
+    margin-right: 15px;
+}
