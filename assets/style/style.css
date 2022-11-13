@@ -165,7 +165,7 @@ main .banner .slider h2 {
 
 /* styles of default, light and dark sections */
 .default {
-    padding: 40px 0;
+    padding: 50px 0;
 }
 .light {
     background-color: #FFF;
@@ -174,7 +174,7 @@ main .banner .slider h2 {
 
 .default .section-title {
     font-weight: 700;
-    font-size: 25px;
+    font-size: 23px;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 5px;
@@ -182,7 +182,7 @@ main .banner .slider h2 {
 
 .default .section-desc {
     font-weight: 600;
-    font-size: 12px;
+    font-size: 11px;
     text-align: center;
     text-transform: uppercase;
     color: #9a9a9a;
@@ -565,13 +565,14 @@ main .banner .slider h2 {
 
 .section-price .price {
     background-color: #FFF;
-    margin-right: 20px;
+    margin-right: 15px;
     padding: 30px;
-    min-width: 300px;
+    width: 100%;
+    min-width: 250px;
 }
 
 .section-price .price:last-child {
-    margin-right: none;
+    margin-right: 0;
 }
 
 .section-price .price,
@@ -694,10 +695,83 @@ main .banner .slider h2 {
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+    min-height: 45px;
 }
 
 .section-facts .section-facts--fact p {
     color: #9a9a9a;
     font-size: 15px;
+}
+
+
+
+
+
+section.social {
+    border-top:1px solid #9a9a9a;
+    border-bottom: 1px solid #9a9a9a;
+}
+
+.section-social {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: auto;
+    color: #000;
+}
+
+.section-social .social {
+    display: flex;
+    align-items: center;
+}
+
+.section-social .image {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #9a9a9a;
+    text-transform: uppercase;
+}
+
+.section-social .image img {
+    margin-right: 10px;
+}
+
+.section-social {
+    font-size: 13px;
+}
+
+.section-social .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CCC;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.section-social .social-icon img {
+    width: 15px;
+    height: 15px;
+}
+
+.section-social .social-icon.twitter {
+    background-color: #34c5f0;
+}
+.section-social .social-icon.linkedin {
+    background-color: #127cb4;
+}
+.section-social .social-icon.facebook {
+    background-color: #336297;
+}
+.section-social .social-icon.googleplus {
+    background-color: #e74237;
+}
+.section-social .social-icon.pinterest {
+    background-color: #b71c29;
 }
