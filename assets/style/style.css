@@ -775,3 +775,43 @@ section.social {
 .section-social .social-icon.pinterest {
     background-color: #b71c29;
 }
+
+
+
+
+
+.section-contact form {
+    margin: auto;
+    max-width: 600px;
+}
+
+.section-contact form div {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.section-contact form div input {
+    margin-right: 30px;
+}
+.section-contact form div input:last-child {
+    margin-right: 0;
+}
+
+.section-contact form input,
+.section-contact form textarea {
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    border-bottom: 2px solid var(--dark-gold);
+    outline: none;
+}
+.section-contact form input::placeholder,
+.section-contact form textarea::placeholder {
+    text-transform: uppercase;
+}
+
+.section-contact form textarea {
+    resize: none;
+    height: 80px;
+    margin-top: 15px;
+}
