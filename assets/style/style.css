@@ -319,20 +319,27 @@ main .banner .slider h2 {
 .section-projects .section-projects--images {
     width: 100%;
     max-width: 1140px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 25px 0;
 }
 
+.section-projects .section-projects--images .section-projects--image  {
+    width: 100%;
+    max-width: 280px;
+}
+
 .section-projects .section-projects--imagearea {
-    max-width: 270px;
+    margin: 10px;
+    max-width: 260px;
     height: 160px;
 }
 
 .section-projects .section-projects--imagearea-desc {
-    max-width: inherit;
-    height: inherit;
+    width: inherit;
+    max-width: 260px;
+    height: 160px;
     text-align: center;
     padding: 20px;
     position: absolute;
@@ -966,6 +973,12 @@ footer .footer-item form input[type=submit] {
 
 /* layout responsive */
 @media(max-width: 1140px) {
+    header nav ul li {
+        margin-right: 10px;
+    }
+    header nav ul li a {
+        font-size: 11px;
+    }
     .container {
         width: 100%;
         padding: 0 20px;
@@ -1029,10 +1042,6 @@ footer .footer-item form input[type=submit] {
         margin-bottom: 20px;
     }
 
-    .section-projects .section-projects--images {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .section-team .section-team--sliders .slider {
         grid-template-columns: 80%;
         justify-content: center;
@@ -1083,14 +1092,56 @@ footer .footer-item form input[type=submit] {
 
 @media(max-width: 450px) {
     main .banner .slider h1 {
-        font-size: 35px;
+        font-size: 27px;
+    }
+    main .banner .slider h2 {
+        font-size: 15px;
+    }
+    .section-about .section-about--image {
+        min-width: 280px;
     }
 
-    main .section-projects .section-projects--images {
-        grid-template-columns: 1fr;
+    .section-team .section-team--sliders .slider {
+        grid-template-columns: 90%;
     }
 
-    main .section-projects .section-projects--images .section-projects--image {
-        margin: auto;
+    .section-company .image {
+        margin-bottom: 20px;
+    }
+
+    .social .section-social,
+    .social .section-social .image {
+        font-size: 10px;
+    }
+
+    .social .section-social .social .social-icon {
+        width: 25px;
+        height: 25px;
+        padding: 7px;
+    }
+    .social .section-social .social .social-icon img {
+        width: 100%;
+    }
+
+    .section-address .container {
+        padding: 0;
+    }
+
+    .section-address .container .section-address--contact {
+        padding: 15px;
+    }
+
+    .section-address .section-address--contact .contactInfo {
+        font-size: 13px;
+    }
+
+    .section-address .container .section-address--contact .image {
+        width: 30px;
+        height: 30px;
+        padding: 7px;
+    }
+
+    .section-address .container .section-address--contact img {
+        width: 100%;
     }
 }

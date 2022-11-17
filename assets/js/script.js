@@ -51,5 +51,13 @@ cs('.banner .pointer').forEach((item) => {
         } else {
             c('.banner-sliders').style.left = '-200vw';
         }
-    })
+    });
 });
+
+cs('.section-team .pointer').forEach((item) => {
+    item.addEventListener('click', () => {
+        c('.section-team .pointer.active').classList.remove('active');
+
+        item.classList.add('active');
+    });
+})
