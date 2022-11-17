@@ -219,6 +219,7 @@ main .banner .slider h2 {
 }
 
 .section-about .section-about--content p {
+    max-width: 90em;
     margin-right: 30px;
     line-height: 30px;
 }
@@ -228,12 +229,12 @@ main .banner .slider h2 {
 }
 
 .section-about .section-about--image {
+    min-width: 300px;
     box-shadow: 2px 2px 12px #000;
 }
 .section-about .section-about--image img {
-    width: 480px;
+    width: 100%;
     height: 100%;
-    border-radius: 5px;
 }
 
 
@@ -1007,9 +1008,89 @@ footer .footer-item form input[type=submit] {
         flex-direction: column;
     }
 
+    .section-about .section-about--content {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .section-about .section-about--content p {
+        text-align: justify;
+        margin: 0;
+    }
+
+    .section-services {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .section-services .section-services--item,
+    .section-services .section-services--item:first-child {
+        max-width: 300px;
+        border: none;
+        margin-bottom: 20px;
+    }
+
+    .section-projects .section-projects--images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-team .section-team--sliders .slider {
+        grid-template-columns: 80%;
+        justify-content: center;
+    }
+    .section-company {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .section-premium {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-premium .section-premium--left {
+        margin-bottom: 20px;
+    }
+
+    .section-facts {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .section-facts .section-facts--fact {
+        margin-bottom: 40px;
+    }
+    .section-facts .section-facts--fact .fact-title {
+        margin-bottom: 0;
+    }
 
 
     .section-address .section-address--contact {
         width: 100%;
+    }
+
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .container .footer-item {
+        max-width: calc(100vw - 40px);
+        width: 100%;
+        text-align: center;
+    }
+    footer .container .footer-item:first-child {
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 450px) {
+    main .banner .slider h1 {
+        font-size: 35px;
+    }
+
+    main .section-projects .section-projects--images {
+        grid-template-columns: 1fr;
+    }
+
+    main .section-projects .section-projects--images .section-projects--image {
+        margin: auto;
     }
 }

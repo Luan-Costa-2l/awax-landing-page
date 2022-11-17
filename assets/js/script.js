@@ -1,17 +1,26 @@
 // Initial Dados
 const c = (el) => document.querySelector(el);
 const cs = (el) => document.querySelectorAll(el);
+let menuCount = 0;
 
 // Functions
-function handleMenu() {
-    let left = parseInt(c('header .menu .menu--icon').getAttribute('data-show'));
-
-    if(left == 0) {
-        c('header .menu .menu--icon').setAttribute('data-show') = 1;
+function bodyHandleMenu() {
+    if(menuCount === 1) {
+        menuCount = 0;
         c('header .menu nav').style.left = '-60vw';
-    } else {
-        lc('header .menu .menu--icon').setAttribute('data-show') = 0;
+        document.documentElement.style.overflow = 'auto';
+    }
+}
+
+function handleMenu() {
+    if(menuCount === 0) {
+        menuCount = 1;
         c('header .menu nav').style.left = '0';
+        document.documentElement.style.overflow = 'hidden';
+    } else {
+        menuCount = 0;
+        c('header .menu nav').style.left = '-60vw';
+        document.documentElement.style.overflow = 'auto';
     }
 }
 
@@ -21,6 +30,8 @@ function changeItem(e) {
 }
 
 // Events
+c('main').addEventListener('click', bodyHandleMenu);
+
 c('header .menu--icon').addEventListener('click', handleMenu);
 
 cs('header nav ul a').forEach((item) => {
