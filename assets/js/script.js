@@ -37,7 +37,7 @@ c('header .menu--icon').addEventListener('click', handleMenu);
 cs('header nav ul a').forEach((item) => {
     item.addEventListener('click', changeItem);
 });
-
+// slide of banner
 cs('.banner .pointer').forEach((item) => {
     item.addEventListener('click', () => {
         c('.banner .pointer.active').classList.remove('active');
@@ -59,5 +59,21 @@ cs('.section-team .pointer').forEach((item) => {
         c('.section-team .pointer.active').classList.remove('active');
 
         item.classList.add('active');
+    });
+});
+
+cs('.section-clients .pointer').forEach((item) => {
+    item.addEventListener('click', () => {
+        c('.section-clients .pointer.active').classList.remove('active');
+        item.classList.add('active');
+
+        let key = c('.section-clients .pointer.active').getAttribute('data-clients');
+        if(key == 0) {
+            c('.section-clients .sliders').style.marginLeft = '0';
+        } else if(key == 1) {
+            c('.section-clients .sliders').style.marginLeft = '-100vw';
+        } else {
+            c('.section-clients .sliders').style.marginLimage.pngimage.pngeft = '-200vw';
+        }
     });
 })

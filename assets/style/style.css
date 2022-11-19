@@ -497,8 +497,10 @@ main .banner .slider h2 {
 }
 
 .section-clients .sliders {
+    margin-left: 0;
     display: flex;
     width: 300vw;
+    transition: all .5s ease;
 }
 
 .section-clients .sliders .slide {
@@ -547,7 +549,6 @@ main .banner .slider h2 {
 }
 
 .section-clients .slider-pointers {
-    max-width: 1140px;
     margin-top: 0;
 }
 
