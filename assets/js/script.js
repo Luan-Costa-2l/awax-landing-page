@@ -4,6 +4,19 @@ const cs = (el) => document.querySelectorAll(el);
 let menuCount = 0;
 
 // Functions
+function showButton() {
+    if(window.scrollY === 0) {
+        c('.scrollButton').style.display = 'none';
+    } else {
+        c('.scrollButton').style.display = 'block';
+    }
+}
+function toTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+}
 function bodyHandleMenu() {
     if(menuCount === 1) {
         menuCount = 0;
@@ -30,6 +43,10 @@ function changeItem(e) {
 }
 
 // Events
+window.addEventListener('scroll', showButton);
+
+c('.scrollButton').addEventListener('click', toTop);
+
 c('main').addEventListener('click', bodyHandleMenu);
 
 c('header .menu--icon').addEventListener('click', handleMenu);

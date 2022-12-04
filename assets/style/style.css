@@ -15,8 +15,20 @@
 
 body {
     color: #FFF;
+    transition: 2s top ease;
 }
 
+.scrollButton {
+    background-color: var(--dark-gold);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    cursor: pointer;
+    z-index: 99;
+}
 
 header {
     height: 100px;
